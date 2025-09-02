@@ -78,7 +78,7 @@ watchEffect(() => {
   if (buttonRipples.value.length > 0) {
     const lastRipple = buttonRipples.value[buttonRipples.value.length - 1];
     setTimeout(() => {
-      buttonRipples.value = buttonRipples.value.filter((ripple) => ripple.key !== lastRipple.key);
+      buttonRipples.value = buttonRipples.value.filter((ripple) => ripple.key !== lastRipple?.key);
     }, props.duration);
   }
 });
