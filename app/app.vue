@@ -3,18 +3,16 @@
 </script>
 
 <template>
-  <div>
+  <div class="min-h-screen flex flex-col relative">
+    <MathsBackground/>
+    <div class="relative z-10">
     <Header/>
     <main class="flex-1">
       <Courses/>
       <Research/>
       <Bio/>
       <Contact/>
-      <!-- <Button>Click me</Button>
-      <RippleButton> Click me! </RippleButton> -->
-
     </main>
-   
-
+  </div>
   </div>
 </template>
