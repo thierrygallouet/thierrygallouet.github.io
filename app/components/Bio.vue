@@ -9,7 +9,6 @@
                 <div class="md:col-span-1">
                   <div class="w-full h-80 bg-muted rounded-lg flex items-center justify-center">
                     <div class="text-center">
-                      <User class="h-16 w-16 text-muted-foreground mx-auto mb-2" />
                       <div class="text-2xl font-semibold text-muted-foreground">TG</div>
                     </div>
                   </div>
