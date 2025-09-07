@@ -6,13 +6,19 @@
   <div class="min-h-screen flex flex-col relative">
     <MathsBackground/>
     <div class="relative z-10">
-    <Header/>
+    <Header />
     <main class="flex-1">
       <Courses/>
+      <Books/>
       <Research/>
-      <Bio/>
       <Contact/>
     </main>
   </div>
   </div>
 </template>
+
+<style>
+
+
+html { scroll-behavior: smooth; }
+</style>
