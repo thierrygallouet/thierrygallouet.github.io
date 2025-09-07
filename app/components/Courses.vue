@@ -3,109 +3,95 @@
       <div class="container mx-auto px-4">
         <h2 class="text-3xl font-semibold text-center mb-12">Enseignements</h2>
         <div class="max-w-6xl mx-auto">
-          <Tabs defaultValue="current" class="w-full">
-            <TabsList class="grid w-full grid-cols-3 mb-8">
-              <TabsTrigger value="current">Enseignements présentiels</TabsTrigger>
-              <TabsTrigger value="distance">Téléenseignements</TabsTrigger>
-              <TabsTrigger value="past">Formations passées</TabsTrigger>
+          <!-- <Tabs defaultValue="distance" class="w-full">
+            <TabsList class="grid w-full grid-cols-2 mb-8">
+              <TabsTrigger value="distance">Enseignements</TabsTrigger>
+              <TabsTrigger value="current">Livres</TabsTrigger>
             </TabsList>
             
-            <TabsContent value="current" class="space-y-6">
+            <TabsContent value="distance" class="space-y-6">
+              <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <template v-for="(course, index) in courses" :key="index">
+                  <CourseCard :course="course" />
+                </template>
+              </div>
+            </TabsContent>
+                        
+            <TabsContent value="current" class="space-y-6"> -->
               <div class="grid md:grid-cols-2 gap-6">
-                <template v-for="(course, index) in currentCourses" :key="index">
+                <template v-for="(course, index) in courses" :key="index">
                   <CourseCard :course="course" />
                 </template>
                   
               </div>
-            </TabsContent>
-            
-            <TabsContent value="distance" class="space-y-6">
-              <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <template v-for="(course, index) in distanceCourses" :key="index">
-                  <CourseCard :course="course" />
-                </template>
-              </div>
-            </TabsContent>
-            
-            <TabsContent value="past" class="space-y-6">
-              <div class="grid md:grid-cols-1 gap-6">
-                <template v-for="(course, index) in pastCourses" :key="index">
-                  <CourseCard :course="course" />
-                </template>
-               
-              </div>
-            </TabsContent>
-          </Tabs>
+            <!-- </TabsContent>
+
+          </Tabs> -->
         </div>
       </div>
     </section>
 </template>
 
 <script setup lang="ts">
-const currentCourses = [
+const courses = [
     {
       code: "L1",
       title: "Analyse et Algèbre",
       semester: "Première année, deuxième semestre",
-      description: "Cours de mathématiques fondamentales pour étudiants de Licence première année, couvrant les bases de l'analyse et de l'algèbre.",
-      level: "Licence"
+      description: "limites, continuité, dérivées, intégration",
+      level: "Licence",
+      link: "http://www.i2m.univ-amu.fr/~gallouet/licence.d/analyse/analyse-l1.pdf"
     },
     {
       code: "L3",
-      title: "Intégration, Analyse numérique, Probabilités, Équations différentielles",
+      title: "EDP, cours manuscrit",
       semester: "Troisième année",
       description: "Cours avancés de mathématiques pour étudiants de Licence troisième année, incluant plusieurs disciplines mathématiques fondamentales.",
-      level: "Licence"
+      level: "Licence",
+      link: "http://www.i2m.univ-amu.fr/~gallouet/cours.d/edp-ens.pdf"
     },
     {
-      code: "M1",
-      title: "Analyse fonctionnelle, Théorie de la mesure et probabilités, Analyse de Fourier, Analyse numérique des EDP",
+      code: "L3",
+      title: "Calcul différentiel et optimisation",
       semester: "Première année de Master",
-      description: "Cours de mathématiques avancées pour étudiants de Master première année, couvrant les aspects théoriques et numériques.",
-      level: "Master"
+      description: "cours manuscrit université de Chambéry 92-93",
+      level: "Master",
+      link: "http://www.i2m.univ-amu.fr/~gallouet/licence.d/CDO.pdf"
     },
     {
-      code: "M2",
-      title: "EDP, Calcul Scientifique, Schémas pour St-Venant",
+      code: "L3 & M1",
+      title: "Mesure, intégration et probabilités",
       semester: "Deuxième année de Master",
-      description: "Cours spécialisés en équations aux dérivées partielles et calcul scientifique pour étudiants de Master deuxième année.",
-      level: "Master"
-    }
-  ];
-
-  const pastCourses = [
-    {
-      code: "DESS",
-      title: "Ingénierie Mécanique et Calcul Scientifique",
-      semester: "2003-2006",
-      description: "Participation au master professionnalisant des universités de Marseille, formation spécialisée en calcul scientifique appliqué.",
-      level: "Professionnel"
-    }
-  ];
-
-  const distanceCourses = [
-    {
-      code: "L3",
-      title: "Intégration (Téléenseignement)",
-      semester: "2014-2015",
-      description: "Cours d'intégration dispensé à distance pour les étudiants de Licence troisième année.",
-      level: "Distance"
-    },
-    {
-      code: "L3",
-      title: "Analyse numérique (Téléenseignement)",
-      semester: "2017-2018",
-      description: "Cours d'analyse numérique dispensé à distance pour les étudiants de Licence troisième année.",
-      level: "Distance"
+      description: "MESURE, INTEGRATION, PROBABILITÉS Cours avec plus de 300 exercices corrigés",
+      level: "Master",
+      link: "http://www.i2m.univ-amu.fr/~gallouet/licence.d/mes-int-pro.pdf"
     },
     {
       code: "M1",
-      title: "Mesure, intégration, probabilités (Téléenseignement)",
-      semester: "2020-2021",
-      description: "Cours dispensé à distance en collaboration avec Erwan Hillion, couvrant la théorie de la mesure et les probabilités.",
-      level: "Distance"
-    }
+      title: "Analyse fonctionnelle",
+      semester: "Deuxième année de Master",
+      description: "Master de mathématiques, 1ere année, université d’Aix-Marseille, Notes de cours et travaux dirigés",
+      level: "Master",
+      link: "https://www.i2m.univ-amu.fr/perso/thierry.gallouet/maitrise.d/anfonc.d/notedecours.pdf"
+    },
+     {
+      code: "M2",
+      title: "EDP",
+      semester: "Deuxième année de Master",
+      description: "Master de mathématiques, 1ere année, université d’Aix-Marseille, Notes de cours et travaux dirigés",
+      level: "Master",
+      link: "http://www.i2m.univ-amu.fr/~gallouet/master2.d/M2edp.pdf"
+    },
+     {
+      code: "DESS",
+      title: "Récupération assistée des hydrocarbures",
+      semester: "Deuxième année de Master",
+      description: "Master de mathématiques, 1ere année, université d’Aix-Marseille, Notes de cours et travaux dirigés",
+      level: "Master",
+      link: "http://www.i2m.univ-amu.fr/~gallouet/dess.d/cours.d/ifp/cours.pdf"
+    },
   ];
+
 </script>
 
 <style scoped>
