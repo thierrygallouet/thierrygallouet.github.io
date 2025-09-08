@@ -22,5 +22,15 @@ export default defineNuxtConfig({
       tailwindcss(),
     ],
   },
-  modules: ['shadcn-nuxt'],
+  modules: ['shadcn-nuxt', '@nuxt/content', '@nuxthq/studio'],
+  content: {
+    // Configuration pour les collections de contenu
+    sources: {
+      content: {
+        driver: 'fs',
+        prefix: '/content', // URL prefix
+        base: './content' // Path source
+      }
+    }
+  },
 })
