@@ -1,6 +1,6 @@
 <template>
   <div class="fixed inset-0 pointer-events-none overflow-hidden z-0">
-    <!-- Formules mathématiques flottantes -->
+    <!-- Floating mathematical formulas -->
     <div
       v-for="(el, index) in mathElementsComputed"
       :key="'formula-' + index"
@@ -10,7 +10,7 @@
       {{ el.text }}
     </div>
 
-    <!-- Symboles mathématiques dispersés -->
+    <!-- Scattered mathematical symbols -->
     <div
       v-for="(el, index) in symbolsComputed"
       :key="'symbol-' + index"
@@ -20,7 +20,7 @@
       {{ el.text }}
     </div>
 
-    <!-- Grille mathématique subtile -->
+    <!-- Subtle mathematical grid -->
     <div class="absolute inset-0 opacity-[0.05]">
       <svg width="100%" height="100%" class="absolute inset-0">
         <defs>
@@ -43,7 +43,7 @@
       </svg>
     </div>
 
-    <!-- Courbes mathématiques animées -->
+    <!-- Animated mathematical curves -->
     <div class="absolute inset-0 opacity-[0.08]">
       <svg width="100%" height="100%" class="absolute inset-0">
         <path
@@ -226,7 +226,7 @@ onMounted(() => {
         animation: `float ${40 + Math.random()}s linear infinite`,
         animationDelay: `${Math.random() * -60}s`,
         "--rotation": `${rotation}deg`,
-        transform: `rotate(${rotation}deg)`, // <- important pour déclencher la variable CSS
+        transform: `rotate(${rotation}deg)`, // <- important to trigger CSS variable
       },
     };
   });
