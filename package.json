@@ -10,7 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@nuxt/content": "^3.6.3",
+    "@nuxt/content": "^3.7.1",
     "@tailwindcss/vite": "^4.1.12",
     "@vueuse/core": "^13.9.0",
     "better-sqlite3": "^12.2.0",
@@ -27,8 +27,5 @@
     "vue": "^3.5.20",
     "vue-router": "^4.5.1",
     "zod": "^3.25.76"
-  },
-  "devDependencies": {
-    "@nuxthq/studio": "^2.2.1"
   }
 }

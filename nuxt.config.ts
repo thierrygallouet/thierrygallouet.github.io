@@ -20,7 +20,7 @@ export default defineNuxtConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-  modules: ["shadcn-nuxt", "@nuxt/content", "@nuxthq/studio"],
+  modules: ["shadcn-nuxt", "@nuxt/content"],
   content: {
     preview: {
       api: "https://api.nuxt.studio",
