@@ -15,7 +15,7 @@
           <Card
             v-for="(book, index) in books"
             :key="index"
-            class="h-full flex flex-col overflow-hidden"
+            class="h-full flex flex-col overflow-hidden pt-0"
           >
             <!-- Cover Image -->
             <div class="relative h-48 bg-muted overflow-hidden">
@@ -25,14 +25,14 @@
                 class="w-full h-full object-cover"
               />
               <div class="absolute top-2 right-2">
-                <Badge :variant="book.type === 'Manuel de cours' ? 'default' : 'secondary'">
+                <Badge>
                   {{ book.type }}
                 </Badge>
               </div>
             </div>
 
             <CardHeader class="pb-3">
-              <CardTitle class="text-lg leading-tight">
+              <CardTitle class="text-lg leading-tight flex items-center gap-2">
                  <BookOpen class="h-6 w-6 text-primary flex-shrink-0 mt-1" />
                 {{ book.title }}
               </CardTitle>
@@ -83,7 +83,7 @@ import { Users, Calendar, BookOpen } from "lucide-vue-next";
 type Book = {
   title: string;
   author: string;
-  type: "Manuel de cours" | "Recherche";
+  type: string;
   level: string;
   year: string;
   coverImage: string;
@@ -96,7 +96,7 @@ const books: Book[] = [
     title:
       "Mesure, intégration, probabilités: Cours avec plus de 300 exercices corrigés",
     author: "Thierry Gallouët",
-    type: "Manuel de cours",
+    type: "Livre",
     level: "Licence/Master",
     year: "2013",
     coverImage:
