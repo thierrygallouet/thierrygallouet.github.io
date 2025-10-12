@@ -137,14 +137,14 @@ const { data: articles } = await useAsyncData('articles', async () => {
   } catch (error) {
     console.warn('Error queryCollection articles, using static data:', error)
     return [
-      {
-        title: "Analyse numérique des EDP : convergence et stabilité",
-        funding: "Collaboration internationale",
-        period: "2018-2023",
-        amount: "Financement collaboratif",
-        description: "JEAN LERAY JACQUES-LOUIS LIONS",
-        link: "https://www.i2m.univ-amu.fr/perso/thierry.gallouet/artbase.d/leraylions.pdf"
-      },
+      // {
+      //   title: "Analyse numérique des EDP : convergence et stabilité",
+      //   funding: "Collaboration internationale",
+      //   period: "2018-2023",
+      //   amount: "Financement collaboratif",
+      //   description: "JEAN LERAY JACQUES-LOUIS LIONS",
+      //   link: "https://www.i2m.univ-amu.fr/perso/thierry.gallouet/artbase.d/leraylions.pdf"
+      // },
       {
         title: "Guido Stampacchia",
         funding: "Annales de l'institut Fourier",
