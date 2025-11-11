@@ -5,6 +5,12 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
+  nitro: {
+    prerender: {
+      routes: ['/sitemap.xml']
+    }
+  },
+  ssr: false, // Génération statique pour GitHub Pages
   shadcn: {
     /**
      * Prefix for all the imported component
@@ -24,13 +30,6 @@ export default defineNuxtConfig({
   content: {
     preview: {
       api: "https://api.nuxt.studio",
-    },
-    sources: {
-      content: {
-        driver: "fs",
-        prefix: "/content", // URL prefix
-        base: "./content", // Path source
-      },
     },
   },
 });
