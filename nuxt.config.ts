@@ -10,7 +10,11 @@ export default defineNuxtConfig({
       routes: ['/sitemap.xml']
     }
   },
-  ssr: false, // Génération statique pour GitHub Pages
+  app: {
+    baseURL: '/', // Base URL pour GitHub Pages
+    buildAssetsDir: '/assets/', // Dossier des assets
+  },
+  ssr: true, // Activer SSR pour le pre-rendering
   shadcn: {
     /**
      * Prefix for all the imported component
@@ -22,7 +26,7 @@ export default defineNuxtConfig({
      */
     componentDir: "./app/components/ui",
   },
-  css: ["~/assets/css/tailwind.css"],
+  css: ["~/app/assets/css/tailwind.css"],
   vite: {
     plugins: [tailwindcss()],
   },
