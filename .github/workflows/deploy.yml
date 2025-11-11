@@ -2,23 +2,23 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ main ]
+    branches: [ nuxt-site ]
   pull_request:
-    branches: [ main ]
+    branches: [ nuxt-site ]
 
-# Permissions nécessaires pour GitHub Pages
+# Permissions needed for GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Permet un seul déploiement concurrent
+# allow only one deployment at a time
 concurrency:
   group: "pages"
   cancel-in-progress: false
 
 jobs:
-  # Job de build
+  # build job
   build:
     runs-on: ubuntu-latest
     steps:
@@ -47,7 +47,7 @@ jobs:
         with:
           path: ./dist
 
-  # Job de déploiement
+
   deploy:
     environment:
       name: github-pages
