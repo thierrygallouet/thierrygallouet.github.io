@@ -90,6 +90,6 @@
 </template>
 
 <script setup lang="ts">
-import { Linkedin, Mail, Phone, ExternalLink } from 'lucide-vue-next';
+import { Linkedin, Mail, ExternalLink } from 'lucide-vue-next';
 
 </script>

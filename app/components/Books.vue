@@ -95,12 +95,11 @@ const books: Book[] = [
   {
     title:
       "Mesure, intégration, probabilités: Cours avec plus de 300 exercices corrigés",
-    author: "Thierry Gallouët",
+    author: "Thierry Gallouët, Raphaèle Herbin",
     type: "Livre",
     level: "Licence/Master",
     year: "2013",
-    coverImage:
-      "https://images.unsplash.com/photo-1732304720116-4195b021d8d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYXRoZW1hdGljcyUyMHRleHRib29rJTIwY292ZXJ8ZW58MXx8fHwxNzU3MTgzNzgxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    coverImage: "/mesure-integrations.jpeg",
     description:
       "Un ouvrage complet couvrant la théorie de la mesure, l'intégration de Lebesgue et les bases des probabilités, enrichi de plus de 300 exercices corrigés pour un apprentissage progressif.",
     topics: [
@@ -112,12 +111,11 @@ const books: Book[] = [
   },
   {
     title: "Weak Solutions of Partial Differential Equations",
-    author: "Thierry Gallouët",
+    author: "Thierry Gallouët, Raphaèle Herbin",
     type: "Recherche",
     level: "Master/Doctorat",
     year: "2018",
-    coverImage:
-      "https://images.unsplash.com/photo-1750776418412-1548a2b3f4b9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhY2FkZW1pYyUyMGJvb2slMjBwYXJ0aWFsJTIwZGlmZmVyZW50aWFsJTIwZXF1YXRpb25zfGVufDF8fHx8MTc1NzI2NDY3MHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    coverImage: "/weak-solutions.jpeg",
     description:
       "Un traité avancé sur les solutions faibles des équations aux dérivées partielles, présentant les développements théoriques modernes et les applications pratiques.",
     topics: [
@@ -129,12 +127,11 @@ const books: Book[] = [
   },
   {
     title: "The Gradient Discretisation Method",
-    author: "Thierry Gallouët",
+    author: "Thierry Gallouët, Raphaèle Herbin",
     type: "Recherche",
     level: "Master/Doctorat",
     year: "2020",
-    coverImage:
-      "https://images.unsplash.com/photo-1750776418412-1548a2b3f4b9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxudW1lcmljYWwlMjBhbmFseXNpcyUyMG1hdGhlbWF0aWNzJTIwYm9va3xlbnwxfHx8fDE3NTcyNjQ2NzF8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    coverImage: "/gradient.jpeg",
     description:
       "Une présentation complète de la méthode de discrétisation par gradients, technique innovante pour l'analyse numérique des équations aux dérivées partielles.",
     topics: [

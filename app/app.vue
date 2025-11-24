@@ -4,7 +4,7 @@
 
 <template>
   <div class="min-h-screen flex flex-col relative">
-    <!-- <MathsBackground/> -->
+    <MathsBackground/>
     <div class="relative z-10">
     <Header />
     <main class="flex-1">
