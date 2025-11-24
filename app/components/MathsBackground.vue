@@ -215,36 +215,44 @@ const symbols = [
   "ε",
 ];
 
+// Générateur de nombres pseudo-aléatoires déterministe
+function seededRandom(seed) {
+  let x = Math.sin(seed) * 10000;
+  return x - Math.floor(x);
+}
+
 const mathElementsComputed = ref([]);
 const symbolsComputed = ref([]);
 
 onMounted(() => {
-  mathElementsComputed.value = mathElements.map((text) => {
-    const rotation = Math.random() * 30 - 15;
+  mathElementsComputed.value = mathElements.map((text, index) => {
+    const seed = index * 123.456; // Seed déterministe basé sur l'index
+    const rotation = seededRandom(seed) * 30 - 15;
     return {
       text,
       style: {
-        left: `${Math.random() * 120 - 10}%`,
-        top: `${Math.random() * 120 - 10}%`,
-        fontSize: `${Math.random() * 6 + 8}px`,
-        animation: `float ${40 + Math.random()}s linear infinite`,
-        animationDelay: `${Math.random() * -60}s`,
+        left: `${seededRandom(seed + 1) * 120 - 10}%`,
+        top: `${seededRandom(seed + 2) * 120 - 10}%`,
+        fontSize: `${seededRandom(seed + 3) * 6 + 8}px`,
+        animation: `float ${40 + seededRandom(seed + 4)}s linear infinite`,
+        animationDelay: `${seededRandom(seed + 5) * -60}s`,
         "--rotation": `${rotation}deg`,
-        transform: `rotate(${rotation}deg)`, // <- important to trigger CSS variable
+        transform: `rotate(${rotation}deg)`,
       },
     };
   });
 
-  symbolsComputed.value = Array.from({ length: 40 }).map(() => {
-    const rotation = Math.random() * 360;
+  symbolsComputed.value = Array.from({ length: 40 }).map((_, index) => {
+    const seed = (index + mathElements.length) * 789.012; // Seed différent pour les symboles
+    const rotation = seededRandom(seed) * 360;
     return {
-      text: symbols[Math.floor(Math.random() * symbols.length)],
+      text: symbols[Math.floor(seededRandom(seed + 1) * symbols.length)],
       style: {
-        left: `${Math.random() * 120 - 10}%`,
-        top: `${Math.random() * 120 - 10}%`,
-        fontSize: `${Math.random() * 15 + 15}px`,
-        animation: `float ${60 + Math.random()}s linear infinite reverse`,
-        animationDelay: `${Math.random() * -80}s`,
+        left: `${seededRandom(seed + 2) * 120 - 10}%`,
+        top: `${seededRandom(seed + 3) * 120 - 10}%`,
+        fontSize: `${seededRandom(seed + 4) * 15 + 15}px`,
+        animation: `float ${60 + seededRandom(seed + 5)}s linear infinite reverse`,
+        animationDelay: `${seededRandom(seed + 6) * -80}s`,
         "--rotation": `${rotation}deg`,
       },
     };

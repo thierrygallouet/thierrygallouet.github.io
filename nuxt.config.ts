@@ -17,6 +17,7 @@ export default defineNuxtConfig({
   experimental: {
     payloadExtraction: false // Désactiver l'extraction de payload pour éviter les problèmes d'hydratation
   },
+  ssr: true,
   shadcn: {
     /**
      * Prefix for all the imported component
