@@ -18,7 +18,7 @@
 </template>
 
 <style>
-
+@import "~/assets/css/tailwind.css";
 
 html { scroll-behavior: smooth; }
 </style>

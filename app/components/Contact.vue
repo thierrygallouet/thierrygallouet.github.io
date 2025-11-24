@@ -58,20 +58,26 @@
             </CardHeader>
             <CardContent class="space-y-4">
               <div class="space-y-3">
-                <Button variant="outline" class="w-full justify-between">
-                  <span>Institut de Mathématiques de Marseille</span>
-                  <ExternalLink class="h-4 w-4" />
-                </Button>
+                <a href="https://www.i2m.univ-amu.fr/" target="_blank" rel="noopener noreferrer">
+                  <Button variant="outline" class="w-full justify-between">
+                    <span>Institut de Mathématiques de Marseille</span>
+                    <ExternalLink class="h-4 w-4" />
+                  </Button>
+                </a>
                 
-                <Button variant="outline" class="w-full justify-between">
-                  <span>Université d'Aix-Marseille</span>
-                  <ExternalLink class="h-4 w-4" />
-                </Button>
+                <a href="https://www.univ-amu.fr/" target="_blank" rel="noopener noreferrer">
+                  <Button variant="outline" class="w-full justify-between">
+                    <span>Université d'Aix-Marseille</span>
+                    <ExternalLink class="h-4 w-4" />
+                  </Button>
+                </a>
                 
-                <Button variant="outline" class="w-full justify-between">
-                  <span>HAL - Archives ouvertes</span>
-                  <ExternalLink class="h-4 w-4" />
-                </Button>
+                <a href="https://hal.archives-ouvertes.fr/" target="_blank" rel="noopener noreferrer">
+                  <Button variant="outline" class="w-full justify-between">
+                    <span>HAL - Archives ouvertes</span>
+                    <ExternalLink class="h-4 w-4" />
+                  </Button>
+                </a>
                 
             
               </div>
