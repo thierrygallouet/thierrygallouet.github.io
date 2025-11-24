@@ -15,6 +15,9 @@ export default defineNuxtConfig({
     buildAssetsDir: '/assets/', // Dossier des assets
   },
   ssr: true, // Activer SSR pour le pre-rendering
+  experimental: {
+    payloadExtraction: false // Désactiver l'extraction de payload pour éviter les problèmes d'hydratation
+  },
   shadcn: {
     /**
      * Prefix for all the imported component

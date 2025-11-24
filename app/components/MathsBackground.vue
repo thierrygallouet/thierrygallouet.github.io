@@ -1,24 +1,28 @@
 <template>
   <div class="fixed inset-0 pointer-events-none overflow-hidden z-0">
     <!-- Floating mathematical formulas -->
-    <div
-      v-for="(el, index) in mathElementsComputed"
-      :key="'formula-' + index"
-      class="absolute text-xs text-foreground/20 select-none whitespace-nowrap font-mono"
-      :style="el.style"
-    >
-      {{ el.text }}
-    </div>
+    <ClientOnly>
+      <div
+        v-for="(el, index) in mathElementsComputed"
+        :key="'formula-' + index"
+        class="absolute text-xs text-foreground/20 select-none whitespace-nowrap font-mono"
+        :style="el.style"
+      >
+        {{ el.text }}
+      </div>
+    </ClientOnly>
 
     <!-- Scattered mathematical symbols -->
-    <div
-      v-for="(el, index) in symbolsComputed"
-      :key="'symbol-' + index"
-      class="absolute text-foreground/15 select-none font-serif"
-      :style="el.style"
-    >
-      {{ el.text }}
-    </div>
+    <ClientOnly>
+      <div
+        v-for="(el, index) in symbolsComputed"
+        :key="'symbol-' + index"
+        class="absolute text-foreground/15 select-none font-serif"
+        :style="el.style"
+      >
+        {{ el.text }}
+      </div>
+    </ClientOnly>
 
     <!-- Subtle mathematical grid -->
     <div class="absolute inset-0 opacity-[0.05]">
