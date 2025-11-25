@@ -1,6 +1,6 @@
 ---
 title: "Mesure, intégration, probabilités: Cours avec plus de 300 exercices corrigés"
-author: "Thierry Gallouët"
+author: "Thierry Gallouët, Raphaèle Herbin"
 type: "Livre"
 level: "Licence/Master"
 year: "2013"
@@ -9,6 +9,6 @@ topics: ["Théorie de la mesure", "Intégration de Lebesgue", "Probabilités", "
 order: 1
 ---
 
-Un ouvrage complet couvrant la théorie de la mesure, l'intégration de Lebesgue et les bases des probabilités, enrichi de plus de 300 exercices corrigés pour un apprentissage progressif.
+Un ouvrage couvrant la théorie de la mesure, l'intégration de Lebesgue et les bases des probabilités, enrichi de plus de 300 exercices corrigés pour un apprentissage progressif.
 
-Ce livre constitue une référence incontournable pour les étudiants de licence et master en mathématiques, offrant une approche rigoureuse et pédagogique des concepts fondamentaux de la théorie de la mesure et de l'intégration.
+Ce livre constitue une référence pour les étudiants de licence et master en mathématiques, offrant une approche rigoureuse et pédagogique des concepts fondamentaux de la théorie de la mesure et de l'intégration.
