@@ -1,10 +1,10 @@
 ---
 code: "L3 & M1"
-title: "Mesure, intégration et probabilités"
-semester: "Deuxième année de Master"
+title: "Mesure, intégration probabilités"
+semester: "troisème année de Licence et première année de Master"
 description: "MESURE, INTEGRATION, PROBABILITÉS Cours avec plus de 300 exercices corrigés"
-level: "Master"
-link: "http://www.i2m.univ-amu.fr/~gallouet/licence.d/mes-int-pro.pdf"
+level: "Licence et Master"
+link: "https://cel.hal.science/cel-00637007"
 ---
 
 Mesure, intégration et probabilités
