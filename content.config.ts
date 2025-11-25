@@ -50,6 +50,33 @@ export default defineContentConfig({
         level: z.string(),
         link: z.string()
       })
+    }),
+    books: defineCollection({
+      type: 'data',
+      source: 'books/**/*.md',
+      schema: z.object({
+        title: z.string(),
+        author: z.string(),
+        type: z.string(),
+        level: z.string(),
+        year: z.string(),
+        coverImage: z.string(),
+        topics: z.array(z.string()),
+        order: z.number()
+      })
+    }),
+    contact: defineCollection({
+      type: 'data',
+      source: 'contact/**/*.md',
+      schema: z.object({
+        title: z.string(),
+        subtitle: z.string(),
+        email: z.string(),
+        phone: z.string().optional(),
+        office: z.string().optional(),
+        address: z.string().optional(),
+        city: z.string().optional()
+      })
     })
   }
 })
