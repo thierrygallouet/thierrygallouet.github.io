@@ -16,7 +16,18 @@ jobs:
           node-version: "20"
       # Pick your own package manager and build script
       - run: npm install
-      - run: npx nuxt build --preset github_pages
+      - run: npx nuxt generate
+      
+      # Debug: List generated files
+      - name: List output directory
+        run: |
+          echo "Contents of .output/:"
+          ls -la .output/ || echo ".output/ not found"
+          echo "Contents of .output/public/:"
+          ls -la .output/public/ || echo ".output/public/ not found"
+          echo "Contents of dist/:"
+          ls -la dist/ || echo "dist/ not found"
+      
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
