@@ -1,11 +1,6 @@
 ---
-title: "On entropy solutions for nonlinear elliptic equations with measure data"
-authors: "Gallouët, Thierry; Morel, Jacques-Michel"
-year: "1988"
-type: "Journal"
-citations: 107
-url: "https://mathscinet-ams-org.ezproxy.math.cnrs.fr/mathscinet/article?mr=0956043"
-doi: 10.1016/0022-247X(88)90161-7
+title: "Finite volume methods"
+authors: "Eymard, Robert; Gallouët, Thierry; Herbin, Raphaèle"
+reference: "Handb. Numer. Anal., VII, North-Holland, Amsterdam, 2000, 713–1020"
+url: "https://mathscinet-ams-org.ezproxy.math.cnrs.fr/mathscinet/article?MR1804748"
 ---
-
-On entropy solutions for nonlinear elliptic equations with measure data
