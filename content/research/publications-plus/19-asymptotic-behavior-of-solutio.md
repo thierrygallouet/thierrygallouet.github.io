@@ -4,6 +4,7 @@ authors: "Boccardo, L.; Gallouët, T."
 year: "1987"
 type: "Journal"
 citations: 73
+order: 19
 url: "https://mathscinet-ams-org.ezproxy.math.cnrs.fr/mathscinet/article?mr=0890450"
 doi: 10.1016/0022-247X(87)90042-6
 ---

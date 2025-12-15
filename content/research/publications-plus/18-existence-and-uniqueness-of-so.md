@@ -4,6 +4,7 @@ authors: "Boccardo, Lucio; Gallouët, Thierry; Orsina, Luigi"
 year: "1996"
 type: "Journal"
 citations: 87
+order: 18
 url: "https://mathscinet-ams-org.ezproxy.math.cnrs.fr/mathscinet/article?mr=1364043"
 
 ---

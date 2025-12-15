@@ -4,6 +4,7 @@ authors: "Falcone, Maurizio; Ferretti, Roberto; Gallouët, Thierry; Vénéreau, 
 year: "2004"
 type: "Journal"
 citations: 88
+order: 17
 url: "https://mathscinet-ams-org.ezproxy.math.cnrs.fr/mathscinet/article?mr=2050136"
 doi: 10.1051/m2an:2004016
 ---

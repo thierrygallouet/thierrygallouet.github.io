@@ -24,6 +24,7 @@ export default defineContentConfig({
         year: z.string(),
         type: z.string(),
         citations: z.number(),
+        order: z.number(),
         doi: z.string().optional(),
         url: z.string().optional()
       })

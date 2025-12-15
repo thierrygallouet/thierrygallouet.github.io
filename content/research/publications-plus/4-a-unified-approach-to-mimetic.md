@@ -4,6 +4,7 @@ authors: "Droniou, Jérôme; Eymard, Robert; Gallouët, Thierry; Herbin, Raphaè
 year: "2010"
 type: "Journal"
 citations: 295
+order: 4
 url: "https://mathscinet-ams-org.ezproxy.math.cnrs.fr/mathscinet/article?mr=2649153"
 
 ---

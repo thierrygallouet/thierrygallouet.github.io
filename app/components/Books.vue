@@ -3,7 +3,7 @@
   <section id="books" class="py-16 bg-background">
     <div class="container mx-auto px-4">
       <div class="text-center mb-12">
-        <h2 class="text-3xl font-semibold mb-4">Ouvrages</h2>
+        <h2 class="text-3xl font-semibold mb-4">Livres</h2>
         <p class="text-muted-foreground max-w-2xl mx-auto">
           Publications d'ouvrages de référence en mathématiques, couvrant la théorie de la mesure, 
           les équations aux dérivées partielles et l'analyse numérique.
@@ -99,41 +99,21 @@ const { data: books } = await useAsyncData('books', async () => {
       .sort((a: any, b: any) => a.order - b.order)
       .map((book: any) => ({
         ...book,
-        description: book.body || book.description || "Description non disponible"
+        description: book.body || book.description
       }))
   } catch (error) {
     console.warn('Error loading books from content, using fallback:', error)
     return [
-      {
-        title: "OMesure, intégration, probabilités: Cours avec plus de 300 exercices corrigés",
-        author: "Thierry Gallouët",
-        type: "Livre",
-        level: "Licence/Master",
-        year: "2013",
-        coverImage: "/mesure-integrations.jpeg",
-        description: "Un ouvrage complet couvrant la théorie de la mesure, l'intégration de Lebesgue et les bases des probabilités, enrichi de plus de 300 exercices corrigés pour un apprentissage progressif.",
-        topics: ["Théorie de la mesure", "Intégration de Lebesgue", "Probabilités", "Exercices corrigés"],
-      },
-      {
-        title: "OWeak Solutions of Partial Differential Equations",
-        author: "Thierry Gallouët",
-        type: "Recherche",
-        level: "Master/Doctorat",
-        year: "2018",
-        coverImage: "/weak-solutions.jpeg",
-        description: "Un traité avancé sur les solutions faibles des équations aux dérivées partielles, présentant les développements théoriques modernes et les applications pratiques.",
-        topics: ["Solutions faibles", "EDP", "Analyse fonctionnelle", "Méthodes variationnelles"],
-      },
-      {
-        title: "OThe Gradient Discretisation Method",
-        author: "Thierry Gallouët",
-        type: "Recherche",
-        level: "Master/Doctorat",
-        year: "2020",
-        coverImage: "/gradient.jpeg",
-        description: "Une présentation complète de la méthode de discrétisation par gradients, technique innovante pour l'analyse numérique des équations aux dérivées partielles.",
-        topics: ["Méthodes numériques", "Discrétisation", "Analyse numérique", "Convergence"],
-      },
+      // {
+      //   title: "Error not loading books",
+      //   author: "Thierry Gallouët",
+      //   type: "Livre",
+      //   level: "Licence/Master",
+      //   year: "2013",
+      //   coverImage: "/mesure-integrations.jpeg",
+      //   description: "Un ouvrage complet couvrant la théorie de la mesure, l'intégration de Lebesgue et les bases des probabilités, enrichi de plus de 300 exercices corrigés pour un apprentissage progressif.",
+      //   topics: ["Théorie de la mesure", "Intégration de Lebesgue", "Probabilités", "Exercices corrigés"],
+      // },
     ]
   }
 })
