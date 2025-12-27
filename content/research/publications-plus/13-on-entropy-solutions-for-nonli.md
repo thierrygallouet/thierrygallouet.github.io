@@ -1,8 +1,7 @@
 ---
-title: "Finite volume methods"
-authors: "Eymard, Robert; Gallouët, Thierry; Herbin, Raphaèle"
+title: "Nonlinear Schrödinger evolution equations"
+authors: "Brézis, H.; Gallouet, T."
 reference: "Handb. Numer. Anal., VII, North-Holland, Amsterdam, 2000, 713–1020"
-url: "https://doi.org/10.1016/S1570-8659(00)07005-8"
-order: 13
+url: "Nonlinear Anal. 4 (1980), no. 4, 677–681"
 ---
-On entropy solutions for nonlinear elliptic equations with measure data
+Nonlinear Schrödinger evolution equations
