@@ -1,12 +1,7 @@
 ---
-title: "A convergent finite-element method for fully nonlinear second-order equations"
-authors: "Feng, Xiaobing; Jensen, Max; Smears, Ian"
-year: "2015"
-type: "Journal"
-citations: 132
-order: 11
-url: "https://mathscinet-ams-org.ezproxy.math.cnrs.fr/mathscinet/article?mr=3322270"
-doi: 10.1090/S0025-5718-2014-02892-3
+title: "Nonlinear elliptic and parabolic equations involving measure data"
+authors: "Boccardo, Lucio; Gallouët, Thierry"
+reference: "J. Funct. Anal. 87 (1989), no. 1, 149–169"
+url: "[https://www.sciencedirect.com/science/article/pii/0022123689900050?via%3Dihub]"
 ---
-
-A convergent finite-element method for fully nonlinear second-order equations
+Nonlinear elliptic and parabolic equations involving measure data
