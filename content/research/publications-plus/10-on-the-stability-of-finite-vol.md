@@ -1,12 +1,7 @@
 ---
-title: "On the stability of finite volume schemes for convection-diffusion equations"
+title: "Finite volume methods"
 authors: "Eymard, Robert; Gallouët, Thierry; Herbin, Raphaèle"
-year: "2000"
-type: "Journal"
-citations: 135
-order: 10
-url: "https://mathscinet-ams-org.ezproxy.math.cnrs.fr/mathscinet/article?mr=1775220"
-doi: 10.1051/m2an:2000109
+revue: Handb. Numer. Anal., VII North-Holland, Amsterdam, 2000, 713–1020. ISBN: 0-444-50350-1
+url: "[https://www.sciencedirect.com/science/chapter/handbook/abs/pii/S1570865900070058?via%3Dihub)"
 ---
-
-On the stability of finite volume schemes for convection-diffusion equations
+Finite volume methods
