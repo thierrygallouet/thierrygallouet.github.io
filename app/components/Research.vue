@@ -50,7 +50,7 @@
                     <h3 class="font-semibold text-lg leading-tight pr-4">
                       {{ pub.title }}
                     </h3>
-                    <div class="flex flex-col items-end gap-2">
+                    <!-- <div class="flex flex-col items-end gap-2">
                       <Badge
                         :variant="
                           pub.type === 'Journal' ? 'default' : 'secondary'
@@ -61,7 +61,7 @@
                       <Badge variant="outline" class="text-xs">
                         {{ pub.citations }} citations
                       </Badge>
-                    </div>
+                    </div> -->
                   </div>
                   <p class="text-sm text-muted-foreground mb-2">
                     {{ pub.authors }}
@@ -77,7 +77,7 @@
                         rel="noopener noreferrer"
                         class="text-xs text-blue-600 hover:text-blue-800 underline"
                       >
-                        MathSciNet
+                        Réf.
                       </a>
                       <a 
                         v-if="pub.doi" 
