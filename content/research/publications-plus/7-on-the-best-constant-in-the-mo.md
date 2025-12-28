@@ -1,12 +1,8 @@
 ---
-title: "On the best constant in the Moser–Trudinger inequality"
-authors: "Aubin, Thierry; Brézis, H.; Gallouët, T."
-year: "1979"
-type: "Journal"
-citations: 238
+title: "Existence and uniqueness of entropy solutions for nonlinear elliptic equations with measure data"
+authors: "Boccardo, Lucio; Gallouët, Thierry; Orsina, Luigi"
+reference: "Ann. Inst. H. Poincaré C Anal. Non Linéaire 13 (1996), no. 5, 539–551"
 order: 7
-url: "https://mathscinet-ams-org.ezproxy.math.cnrs.fr/mathscinet/article?mr=0544733"
-doi: 10.1016/0022-247X(79)90076-9
+url: "https://ems.press/journals/aihpc/articles/4076443"
 ---
-
-On the best constant in the Moser–Trudinger inequality
+Existence and uniqueness of entropy solutions for nonlinear elliptic equations with measure data
