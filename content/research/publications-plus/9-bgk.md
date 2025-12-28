@@ -1,6 +1,5 @@
 ---
-title: "Équations de champs scalaires euclidiens non linéaires dans le plan,
-Nonlinear Euclidean scalar field equations in the plane"
+title: "Équations de champs scalaires euclidiens non linéaires dans le plan"
 authors: "Berestycki, Henri; Gallouët, Thierry; Kavian, Otared"
 reference: "C. R. Acad. Sci. Paris Sér. I Math. 297 (1983), no. 5, 307–310"
 order: 9
