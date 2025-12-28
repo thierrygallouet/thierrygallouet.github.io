@@ -1,12 +1,9 @@
 ---
-title: "A remark on L∞ estimates for nonlinear elliptic equations"
-authors: "Brezis, H.; Gallouet, T."
-year: "1980"
-type: "Journal"
-citations: 144
+title: "Équations de champs scalaires euclidiens non linéaires dans le plan,
+Nonlinear Euclidean scalar field equations in the plane"
+authors: "Berestycki, Henri; Gallouët, Thierry; Kavian, Otared"
+reference: "C. R. Acad. Sci. Paris Sér. I Math. 297 (1983), no. 5, 307–310"
 order: 9
-url: "https://mathscinet-ams-org.ezproxy.math.cnrs.fr/mathscinet/article?mr=0580765"
-doi: 10.1016/0362-546X(80)90046-2
+url: "https://www.i2m.univ-amu.fr/perso/thierry.gallouet/art.d/bgk83.pdf"
 ---
-
-A remark on L∞ estimates for nonlinear elliptic equations
+Équations de champs scalaires euclidiens non linéaires dans le plan
