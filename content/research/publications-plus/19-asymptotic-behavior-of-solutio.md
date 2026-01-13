@@ -1,12 +1,8 @@
 ---
-title: "Asymptotic behavior of solutions for nonlinear parabolic equations involving entropy"
-authors: "Boccardo, L.; Gallouët, T."
-year: "1987"
-type: "Journal"
-citations: 73
-order: 19
+title: "Anisotropic equations in  L1"
+authors: "BBoccardo, L.; Gallouët, T.; Marcellini, P."
+reference: "Differential Integral Equations 9 (1996), no. 1, 209–212"
+order: 16
 url: "https://mathscinet-ams-org.ezproxy.math.cnrs.fr/mathscinet/article?mr=0890450"
-doi: 10.1016/0022-247X(87)90042-6
 ---
-
-Asymptotic behavior of solutions for nonlinear parabolic equations involving entropy
+Anisotropic equations in  L1 
