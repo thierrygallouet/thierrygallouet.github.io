@@ -1,12 +1,8 @@
 ---
-title: "Existence and uniqueness of entropy solutions for nonlinear elliptic equations with measure data"
-authors: "Gallouët, Thierry; Morel, Jacques-Michel"
-year: "1997"
-type: "Journal"
-citations: 106
-order: 14
-url: "https://mathscinet-ams-org.ezproxy.math.cnrs.fr/mathscinet/article?mr=1409661"
-doi: 10.1016/S0764-4442(97)87004-4
+title: "A unified approach to mimetic finite difference, hybrid finite volume and mixed finite volume methods"
+authors: "Droniou, Jérôme; Eymard, Robert; Gallouët, Thierry; Herbin, Raphaèle"
+reference: "Math. Models Methods Appl. Sci. 20 (2010), no. 2, 265–295"
+order: 11
+url: "https://www.worldscientific.com/doi/10.1142/S0218202510004222"
 ---
-
-Existence and uniqueness of entropy solutions for nonlinear elliptic equations with measure data
+A unified approach to mimetic finite difference, hybrid finite volume and mixed finite volume methods
